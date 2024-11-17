@@ -5,7 +5,7 @@ function EDA() {
     <div style={{ padding: "20px" }}>
       <h1>Exploratory Data Analysis</h1>
       <iframe
-        src="http://localhost:8501" // URL of the Streamlit app
+        src="https://pradeepkumar35-advanced-sales-performance-analysi-srcapp-k9vgz6.streamlit.app/" // URL of the Streamlit app
         width="100%"
         height="800px"
         title="Streamlit EDA"

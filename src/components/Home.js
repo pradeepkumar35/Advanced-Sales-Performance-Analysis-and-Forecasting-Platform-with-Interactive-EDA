@@ -10,7 +10,6 @@ function Home() {
   };
 
   const handleEDA = () => {
-    // This will open the Streamlit app (app.py) in the same window
     window.open(
       "https://pradeepkumar35-advanced-sales-performance-analysi-srcapp-k9vgz6.streamlit.app/",
       "_self"
@@ -28,7 +27,12 @@ function Home() {
     <div className="home">
       <h1>Sales EDA Analysis and Forecast</h1>
       <div className="cards">
-        <div className="card" onClick={handleEDA} style={{ cursor: "pointer" }}>
+        <div
+          className="card"
+          onClick={handleEDA}
+          style={{ cursor: "pointer" }}
+          aria-label="Exploratory Data Analysis Card"
+        >
           <h2>Exploratory Data Analysis</h2>
           <p>Data visualization</p>
         </div>
@@ -36,6 +40,7 @@ function Home() {
           className="card"
           onClick={handleForecast}
           style={{ cursor: "pointer" }}
+          aria-label="Sales Forecasting Card"
         >
           <h2>Forecast Future Sales</h2>
           <p>Sales revenue in the future</p>
@@ -44,6 +49,7 @@ function Home() {
           className="card"
           onClick={redirectToTableau}
           style={{ cursor: "pointer" }}
+          aria-label="Tableau Dashboard Card"
         >
           <h2>Tableau Dashboard</h2>
           <p>View interactive dashboard</p>
