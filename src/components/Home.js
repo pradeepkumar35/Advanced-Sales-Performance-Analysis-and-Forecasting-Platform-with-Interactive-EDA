@@ -11,11 +11,17 @@ function Home() {
 
   const handleEDA = () => {
     // This will open the Streamlit app (app.py) in the same window
-    window.open("http://localhost:8501", "_self");
+    window.open(
+      "https://pradeepkumar35-advanced-sales-performance-analysi-srcapp-k9vgz6.streamlit.app/",
+      "_self"
+    );
   };
 
   const handleForecast = () => {
-    window.open("http://localhost:8502", "_self");
+    window.open(
+      "https://pradeepkumar35-advanced-sales-perfo-srcsales-forecasting-n18vd8.streamlit.app/",
+      "_self"
+    );
   };
 
   return (
