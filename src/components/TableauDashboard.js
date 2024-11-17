@@ -2,6 +2,12 @@ import React, { useEffect } from "react";
 import "./TableauDashboard.css"; // Assuming you have a CSS file for styling
 
 function TableauDashboard() {
+  // Define handleClick function
+  const handleClick = () => {
+    console.log("Dashboard image clicked!");
+    // You can perform additional actions here, such as redirecting or showing a message
+  };
+
   useEffect(() => {
     const divElement = document.getElementById("viz1729527875652");
     const vizElement = divElement.getElementsByTagName("object")[0];
@@ -23,14 +29,15 @@ function TableauDashboard() {
         style={{ position: "relative" }}
       >
         <noscript>
-          /* eslint-disable jsx-a11y/anchor-is-valid */
-          <a href="#">
+          <button
+            onClick={handleClick} // Correctly referenced handleClick
+            style={{ border: "none", background: "none" }}
+          >
             <img
               alt="Dashboard"
               src="https://public.tableau.com/static/images/Fi/Finalproject1tableau/Dashboard2/1_rss.png"
-              style={{ border: "none" }}
             />
-          </a>
+          </button>
         </noscript>
         <object className="tableauViz" style={{ display: "none" }}>
           <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
