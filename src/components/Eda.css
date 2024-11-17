@@ -1,0 +1,7 @@
+.eda {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(120deg, #c3ec52 0%, #0ba29d 100%);
+    color: white;
+    min-height: 100vh; /* Ensure full height of viewport */
+}

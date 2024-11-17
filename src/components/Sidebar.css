@@ -1,0 +1,48 @@
+.sidebar {
+    width: 250px;
+    height: 100vh; /* Full height sidebar */
+    background: linear-gradient(145deg, #434343, #000000);
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .sidebar-header h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #00d1ff;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul li {
+    margin: 20px 0;
+  }
+  
+  ul li a {
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    background: #1f1f1f;
+    border-radius: 10px;
+    display: block;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+  
+  ul li a:hover {
+    background-color: #00d1ff;
+  }
+  
+  .sidebar-footer {
+    padding-top: 20px;
+    text-align: center;
+  }
+  

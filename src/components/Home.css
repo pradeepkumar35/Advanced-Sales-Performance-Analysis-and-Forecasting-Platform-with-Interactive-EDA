@@ -1,0 +1,51 @@
+.home {
+  text-align: center;
+  padding: 50px;
+  background: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+  color: white;
+  min-height: 100vh; /* Ensure full height of viewport */
+  width: calc(100vw - 250px); /* Sidebar takes 250px, fill the rest */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  width: 100%; /* Fill the width of the available space */
+}
+
+.card {
+  margin: 0 10px;
+  width: 45%;
+  padding: 30px;
+  background: #ffffff;
+  color: #333;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+  font-size: 24px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 18px;
+  color: #666;
+}

@@ -1,0 +1,83 @@
+.predict {
+  text-align: center;
+  padding: 50px;
+  background: linear-gradient(120deg, #c3ec52 0%, #0ba29d 100%);
+  color: white;
+  height: 100vh; /* Ensure it takes the full height of the viewport */
+  width: calc(100vw - 250px); /* Sidebar takes 250px, fill the rest */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto; /* Ensure content scrolls if it exceeds viewport height */
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  padding: 30px;
+  background: #ffffff;
+  color: #333;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns layout */
+  grid-gap: 15px;
+  width: 100%;
+}
+
+input, select {
+  padding: 12px 15px;
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #0ba29d;
+  border: none;
+  font-size: 18px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #0daaad;
+}
+
+/* Styling for the result display */
+.result {
+  padding: 30px;
+  background: #ffffff;
+  color: #333;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+.result h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #0ba29d; /* Matches button color */
+}
+
+.result p {
+  font-size: 1.5em;
+  margin: 10px 0;
+}

@@ -1,0 +1,18 @@
+.tableau-container {
+  display: flex;
+  justify-content: center; /* Center the dashboard horizontally */
+  align-items: center;     /* Center the dashboard vertically */
+  padding: 20px;          /* Optional: Add some padding around */
+  background-color: #f9f9f9; /* Optional: Light background for contrast */
+}
+
+.tableauPlaceholder {
+  width: 100%; /* Full width of the parent container */
+  height: 827px; /* Fixed height */
+  position: relative;
+  text-align: center;
+}
+
+.tableauViz {
+  display: block; /* Ensure the object is displayed correctly */
+}
