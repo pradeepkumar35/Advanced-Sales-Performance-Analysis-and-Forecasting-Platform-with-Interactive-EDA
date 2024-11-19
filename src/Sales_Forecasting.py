@@ -42,7 +42,21 @@ def main():
             df = df.resample('M').sum()  # Resample to monthly frequency for clarity
 
         # Preprocessing: Log transform the sales data to stabilize variance
+        # Convert 'Sales' to numeric, coercing errors to NaN
+        # Remove commas, dollar signs, and other non-numeric characters
+        df['Sales'] = df['Sales'].replace({',': '', r'\$': '', ' ': ''}, regex=True)
+
+        # Convert to numeric, handling errors
+        df['Sales'] = pd.to_numeric(df['Sales'], errors='coerce')
+
+        # Drop rows with invalid or missing Sales values
+        df.dropna(subset=['Sales'], inplace=True)
+
+        # Log transform the sales data to stabilize variance
         df['Sales'] = np.log1p(df['Sales'])  # log1p to handle zero values
+        if df['Sales'].isnull().any():
+            st.error("Sales column contains invalid values even after cleaning. Please check your data.")
+            return
 
         # Updated SARIMA model with adjusted parameters for better seasonal handling
         model = SARIMAX(df['Sales'], order=(2, 1, 2), seasonal_order=(1, 1, 1, 12))

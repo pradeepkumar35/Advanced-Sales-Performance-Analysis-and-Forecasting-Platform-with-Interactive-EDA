@@ -10,17 +10,11 @@ function Home() {
   };
 
   const handleEDA = () => {
-    window.open(
-      "https://pradeepkumar35-advanced-sales-performance-analysi-srcapp-k9vgz6.streamlit.app/",
-      "_self"
-    );
+    window.open("http://localhost:8501/", "_self");
   };
 
   const handleForecast = () => {
-    window.open(
-      "https://pradeepkumar35-advanced-sales-perfo-srcsales-forecasting-n18vd8.streamlit.app/",
-      "_self"
-    );
+    window.open("http://localhost:8502/", "_self");
   };
 
   return (
