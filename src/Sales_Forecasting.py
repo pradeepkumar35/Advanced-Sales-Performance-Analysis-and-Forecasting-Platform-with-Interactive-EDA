@@ -3,7 +3,16 @@ import pandas as pd
 import numpy as np
 import plotly.graph_objs as go
 from statsmodels.tsa.statespace.sarimax import SARIMAX  # Use SARIMA for seasonality
-
+st.markdown(
+    """
+    <style>
+        .stApp {
+             background-color: #1E1E2F;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
 
 def main():
     st.title("Sales Forecasting")
@@ -96,3 +105,54 @@ def main():
 
 if __name__ == '__main__':
     main()
+st.markdown("""
+    <style>
+    .stAlert {
+    background-color: #FFBF00; /* Soft Amber */
+    color: #4D2600;            /* Dark Brown Text */
+    border: 1px solid #FF6F00; /* Bright Orange Border */
+    border-radius: 5px;
+}
+         div.css-1kiw93k {  /* This targets the container Streamlit uses for markdown content */
+            color: #002B5B; /* Dark Navy Blue */
+            font-size: 18px;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+            padding: 5px;
+        }
+        .main {
+            text-align: center;
+            padding: 50px;
+            color: white;
+            min-height: 100vh; /* Ensure full height of viewport */
+        }
+        h1, h2 {
+            color: #002B5B;
+            color: #fff;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        .card {
+            width: 45%;
+            padding: 30px;
+            background: #ffffff;
+            color: #333;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            margin: 20px auto; /* Center the card */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+        }
+        .card h2 {
+            font-size: 24px;
+            color: #007bff;
+        }
+        .card p {
+            font-size: 18px;
+            color: #666;
+        }
+    </style>
+""", unsafe_allow_html=True)

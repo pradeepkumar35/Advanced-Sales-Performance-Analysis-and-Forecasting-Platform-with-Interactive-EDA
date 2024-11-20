@@ -5,6 +5,21 @@ import missingno as msno
 
 st.title("EDA & Sales/Profit Analysis")
 
+st.markdown(
+    """
+    <style>
+        .stApp {
+             background-color: #1E1E2F;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
+
+
+
+
 # Function to standardize column names dynamically
 def find_column(df, possible_names):
     """
@@ -302,16 +317,30 @@ if uploaded_file is not None:
             st.plotly_chart(fig)
 st.markdown("""
     <style>
+    .stAlert {
+    background-color: #FFBF00; /* Soft Amber */
+    color: #4D2600;            /* Dark Brown Text */
+    border: 1px solid #FF6F00; /* Bright Orange Border */
+    border-radius: 5px;
+}
+         div.css-1kiw93k {  /* This targets the container Streamlit uses for markdown content */
+            color: #002B5B; /* Dark Navy Blue */
+            font-size: 18px;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+            padding: 5px;
+        }
         .main {
             text-align: center;
             padding: 50px;
-            background: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
             color: white;
             min-height: 100vh; /* Ensure full height of viewport */
         }
         h1, h2 {
-            font-size: 2.5em;
+            color: #002B5B;
             color: #fff;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
         }
         .card {
             width: 45%;
